@@ -18,6 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/job', 'HomeController@job');
+Route::get('/post', 'HomeController@post');
+Route::get('/student', 'HomeController@student');
+Route::get('/category', 'HomeController@category');
 
 Route::group(['middleware' => ['role:admin']], function () {
     Route::resource('tms', 'TMSController');

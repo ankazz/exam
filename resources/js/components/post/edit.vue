@@ -32,7 +32,7 @@ export default {
             }
         },
         mounted() {
-            axios.get('/api/job/'+this.id).then(response => {
+            axios.get('/api/post/'+this.id).then(response => {
                 this.name = response.data.name,
                 this.sname = response.data.sname
             }).catch(error => {
@@ -41,7 +41,7 @@ export default {
         },
         methods: {
             UpdateService() {
-                axios.put('/api/job/'+this.id, {
+                axios.put('/api/post/'+this.id, {
                     name: this.name,
                     sname: this.sname
                 }).then(response => {

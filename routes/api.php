@@ -20,6 +20,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('users', 'Api\UserController');
 Route::resource('job', 'Api\JobController');
 Route::put('job', 'Api\JobController@store');
+Route::get('/job_total', 'Api\JobController@total');
+
+Route::resource('post', 'Api\PostController');
+Route::put('post', 'Api\PostController@store');
+Route::get('/post_total', 'Api\PostController@total');
+
+Route::resource('student', 'Api\StudentController');
+Route::put('student', 'Api\StudentController@store');
+
+Route::resource('category', 'Api\CategoryController');
+Route::put('category', 'Api\CategoryController@store');
+
 Route::resource('tms', 'Api\TMSController');
 Route::put('tms', 'Api\TMSController@store');
 Route::get('/tms_total', 'Api\TMSController@total')->name('tms.total');

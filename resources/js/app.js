@@ -29,11 +29,9 @@ Vue.component('users', require('./components/users/index.vue'));
 Vue.component('users-edit', require('./components/users/edit.vue'));
 
 Vue.component('job', require('./components/Job.vue'));
-Vue.component('tms', require('./components/Tms.vue'));
-Vue.component('edizm', require('./components/Edizm.vue'));
-Vue.component('service', require('./components/service.vue'));
-Vue.component('task', require('./components/task.vue'));
-Vue.component('ttms', require('./components/ttms.vue'));
+Vue.component('post', require('./components/Post.vue'));
+Vue.component('student', require('./components/Student.vue'));
+Vue.component('category', require('./components/Category.vue'));
 
 const app = new Vue({
     el: '#app',

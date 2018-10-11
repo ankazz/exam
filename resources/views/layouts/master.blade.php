@@ -226,11 +226,11 @@
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/tms">ТМЦ</a></li>
-            <li><a href="/service">Районы и службы</a></li>
-            <li><a href="/task">Работы</a></li>
-            <li><a href="/ttms">Тип</a></li>
-            <li><a href="/edizm">Ед. измерения</a></li>
+            <li><a href="/category">Категории вопросов</a></li>
+            <li><a href="/post">Должности</a></li>
+            <li><a href="/student">Студенты</a></li>
+            <li><a href="/job">Место работы</a></li>
+            <li><a href="#">Экзамены</a></li>
           </ul>
         </li>
       </ul>

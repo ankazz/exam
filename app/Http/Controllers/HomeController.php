@@ -26,4 +26,22 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('job.index');
     }
+
+    public function post()
+    {
+        $user = Auth::user();
+        return view('post.index');
+    }
+
+    public function student()
+    {
+        $user = Auth::user();
+        return view('student.index');
+    }
+
+    public function category()
+    {
+        $user = Auth::user();
+        return view('category.index');
+    }
 }
